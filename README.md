@@ -18,20 +18,38 @@ python main.py
 
 Для статті 2 використано існуючий підрядок `розгорнутий список` і вигаданий підрядок `вигаданий підрядок якого точно немає`.
 
-| Text | Pattern type | Boyer-Moore | KMP | Rabin-Karp | Fastest |
-| --- | --- | ---: | ---: | ---: | --- |
-| Article 1 | existing | 0.000575 | 0.001884 | 0.003773 | Boyer-Moore |
-| Article 1 | missing | 0.008445 | 0.067675 | 0.137325 | Boyer-Moore |
-| Article 2 | existing | 0.001376 | 0.006725 | 0.012633 | Boyer-Moore |
-| Article 2 | missing | 0.013823 | 0.103438 | 0.208434 | Boyer-Moore |
+Результати запуску:
+
+```text
+Article 1, existing:
+Boyer-Moore - 0.000575
+KMP - 0.001884
+Rabin-Karp - 0.003773
+Найшвидший: Boyer-Moore
+
+Article 1, missing:
+Boyer-Moore - 0.008445
+KMP - 0.067675
+Rabin-Karp - 0.137325
+Найшвидший: Boyer-Moore
+
+Article 2, existing:
+Boyer-Moore - 0.001376
+KMP - 0.006725
+Rabin-Karp - 0.012633
+Найшвидший: Boyer-Moore
+
+Article 2, missing:
+Boyer-Moore - 0.013823
+KMP - 0.103438
+Rabin-Karp - 0.208434
+Найшвидший: Boyer-Moore
 
 Загальний час:
-
-| Algorithm | Total time |
-| --- | ---: |
-| Boyer-Moore | 0.024220 |
-| KMP | 0.179721 |
-| Rabin-Karp | 0.362165 |
+Boyer-Moore - 0.024220
+KMP - 0.179721
+Rabin-Karp - 0.362165
+```
 
 ## Висновки
 
